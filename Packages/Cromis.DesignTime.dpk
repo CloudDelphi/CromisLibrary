@@ -1,0 +1,40 @@
+package Cromis.DesignTime;
+
+{$R *.res}
+{$R '..\Cromis.RoboMailer.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE ON}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  OverbyteIcs;
+
+contains
+  Cromis.Unicode in '..\Cromis.Unicode.pas',
+  Cromis.RoboMailer in '..\Cromis.RoboMailer.pas',
+  Cromis.StringUtils in '..\Cromis.StringUtils.pas';
+
+end.
+
+
